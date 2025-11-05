@@ -1,0 +1,194 @@
+/* Auth.css for Login and Signup pages */
+
+
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("/login.jpg") center/cover no-repeat;
+  
+  background-color: #f4f7f6; /* Fallback for eco theme if image fails */
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  width: 1520px;
+  padding: 0;
+}
+
+.auth-container {
+  width: 1490px;
+  /* max-width: 500px; Suitable for laptop screens */
+  min-height: 450px; /* Ensures sufficient height for content */
+  margin: 20px; /* Small margin for edge cases */
+  padding: 40px; /* Spacious padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(5px); /* Frosted glass effect for readability */
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  text-align: center;
+}
+
+.auth-container h1 {
+  color: #2e7d32; /* Green to match SmartWaste eco theme */
+  font-size: 32px; /* Larger for prominence */
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 25px; /* More spacing for better layout */
+  text-align: left;
+  padding-right: 20px; /* Match your existing style */
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px; /* Slightly larger for readability */
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px; /* Increased padding */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque for input readability */
+}
+
+.form-group input:focus {
+  border-color: #4caf50; /* Green focus border */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form-group input::placeholder {
+  color: #999;
+  opacity: 0.8;
+}
+
+button {
+  width: 100%;
+  padding: 14px; /* Increased padding */
+  background-color: #4caf50; /* Green button */
+  color: #ffffff;
+  font-size: 18px; /* Larger for prominence */
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #a5d6a7; /* Light green when disabled */
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f; /* Red for errors */
+  font-size: 16px; /* Slightly larger */
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.auth-container p {
+  font-size: 16px; /* Larger for readability */
+  color: #555;
+  margin-top: 25px;
+}
+
+.auth-container a {
+  color: #4caf50; /* Green link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+  color: #388e3c; /* Darker green on hover */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .auth-container {
+    max-width: 90%; /* Full-width on small screens */
+    padding: 20px;
+    min-height: 400px;
+  }
+
+  .auth-container h1 {
+    font-size: 26px;
+  }
+
+  .form-group label {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .error {
+    font-size: 14px;
+  }
+
+  .auth-container p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .auth-container {
+    max-width: 450px;
+    padding: 30px;
+    min-height: 420px;
+  }
+
+  .auth-container h1 {
+    font-size: 28px;
+  }
+
+  .form-group label {
+    font-size: 17px;
+  }
+
+  .form-group input {
+    padding: 13px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 13px;
+    font-size: 17px;
+  }
+
+  .error {
+    font-size: 15px;
+  }
+
+  .auth-container p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .auth-container {
+    max-width: 500px; /* Optimal for laptop screens */
+    padding: 40px;
+    min-height: 450px;
+  }
+}

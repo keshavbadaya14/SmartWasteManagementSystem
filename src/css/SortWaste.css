@@ -1,0 +1,163 @@
+.sort-waste {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-waste-section {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url('/recycle-bg1.jpg') center/cover no-repeat;
+  background-color: #f4f4f4;
+  width: 1520px;
+  margin: 0 auto;
+  min-height: calc(100vh - 180px);
+}
+
+.sort-waste-section h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+}
+
+.sort-waste-section p {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.sort-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2e7d32;
+}
+
+button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.category {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.category.recyclable {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.category.organic {
+  background-color: #f1f8e9;
+  color: #558b2f;
+}
+
+.category.hazardous {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.category.general-waste {
+  background-color: #eceff1;
+  color: #546e7a;
+}
+
+@media (max-width: 768px) {
+  .sort-waste-section {
+    padding: 30px 10px;
+  }
+
+  .sort-waste-section h1 {
+    font-size: 2rem;
+  }
+
+  .sort-form {
+    padding: 20px;
+  }
+}

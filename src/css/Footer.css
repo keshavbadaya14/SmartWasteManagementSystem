@@ -1,0 +1,27 @@
+.footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  bottom: 0;
+  left: 0;
+  width: 1520px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-weight: 500; /* Slightly bolder for visibility */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); /* Enhance readability */
+  color: white;
+}
+
+.footer a {
+  color: #a5d6a7;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  color: white;
+}

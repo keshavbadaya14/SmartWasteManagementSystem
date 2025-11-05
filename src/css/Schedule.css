@@ -1,0 +1,246 @@
+.pickup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto; /* Center horizontally */
+  padding-top: 60px; /* Offset for fixed navbar */
+  background: url("/Schedule.jpg") center/cover no-repeat;
+}
+
+.pickup-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Centers form vertically */
+  width: 1520px; /* Matches body width */
+}
+
+.pickup-form {
+  width: 100%;
+  max-width: 500px; /* Suitable for laptop screens */
+  min-height: 500px; /* Compact height */
+  margin: 20px; /* Small margin for edge cases */
+  padding: 40px; /* Spacious padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  text-align: center;
+}
+
+.pickup-form h1 {
+  color: #2e7d32; /* Green to match SmartWaste eco theme */
+  font-size: 32px; /* Larger for prominence */
+  margin-bottom: 25px;
+}
+
+.pickup-form-group {
+  margin-bottom: 20px; /* Reduced spacing for compact layout */
+  text-align: left;
+  padding-right: 20px; /* Match existing style */
+}
+
+.pickup-form-group label {
+  display: block;
+  font-size: 18px; /* Slightly larger for readability */
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.pickup-form-group input,
+.pickup-form-group select,
+.pickup-form-group textarea {
+  width: 100%;
+  padding: 14px; /* Increased padding */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque */
+  font-family: 'Arial', sans-serif;
+}
+
+.pickup-form-group select {
+  appearance: none; /* Remove default dropdown arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><polygon fill="#333" points="0,0 12,0 6,12"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.pickup-form-group textarea {
+  min-height: 100px; /* Suitable for notes */
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.pickup-form-group input:focus,
+.pickup-form-group select:focus,
+.pickup-form-group textarea:focus {
+  border-color: #4caf50; /* Green focus border */
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.pickup-form-group input::placeholder,
+.pickup-form-group textarea::placeholder {
+  color: #999;
+  opacity: 0.8;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4caf50; /* Green button */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #a5d6a7; /* Light green when disabled */
+  cursor: not-allowed;
+}
+
+.pickup-error {
+  color: #d32f2f; /* Red for errors */
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.pickup-success {
+  color: #2e7d32; /* Green for success messages */
+  font-size: 16px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.pickup-form p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 25px;
+}
+
+.pickup-form a {
+  color: #4caf50; /* Green link */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pickup-form a:hover {
+  text-decoration: underline;
+  color: #388e3c; /* Darker green on hover */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  body {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .pickup-container {
+    max-width: 100%;
+    padding-top: 100px; /* Increased padding for navbar */
+  }
+
+  .pickup-form {
+    max-width: 90%; /* Full-width on small screens */
+    padding: 20px;
+    min-height: 400px; /* Adjusted for mobile */
+  }
+
+  .pickup-form h1 {
+    font-size: 26px;
+  }
+
+  .pickup-form-group label {
+    font-size: 16px;
+  }
+
+  .pickup-form-group input,
+  .pickup-form-group select,
+  .pickup-form-group textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .pickup-error,
+  .pickup-success {
+    font-size: 14px;
+  }
+
+  .pickup-form p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    width: 100%; /* Full width for tablet */
+  }
+
+  .pickup-container {
+    max-width: 100%;
+    padding-top: 90px; /* Adjusted for tablet */
+  }
+
+  .pickup-form {
+    max-width: 450px;
+    padding: 30px;
+    min-height: 420px; /* Adjusted for tablet */
+  }
+
+  .pickup-form h1 {
+    font-size: 28px;
+  }
+
+  .pickup-form-group label {
+    font-size: 17px;
+  }
+
+  .pickup-form-group input,
+  .pickup-form-group select,
+  .pickup-form-group textarea {
+    padding: 13px;
+    font-size: 15px;
+  }
+
+  button {
+    padding: 13px;
+    font-size: 17px;
+  }
+
+  .pickup-error,
+  .pickup-success {
+    font-size: 15px;
+  }
+
+  .pickup-form p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .pickup-form {
+    max-width: 500px; /* Optimal for laptop screens */
+    padding: 40px;
+    min-height: 500px; /* Consistent with reduced height */
+  }
+}

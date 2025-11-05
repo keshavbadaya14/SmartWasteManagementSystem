@@ -1,0 +1,95 @@
+/* JoinChallenge.css for Join Challenge page */
+
+.join-challenge-container {
+  position: relative;
+  width: 1540px;
+  height: 840px;
+  background: url("/joinChallenge.jpg") center/cover no-repeat;
+  background-color: #f4f7f6;
+  margin: 0 auto;
+  padding-top: 80px; /* Offset for fixed navbar */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-challenge-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.join-challenge-notebook {
+  position: absolute;
+  width: 800px;
+  height: 650px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(#eee 1px, transparent 1px);
+}
+
+.join-challenge-notebook h1 {
+  color: #2e7d32;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.join-challenge-notebook ul {
+  list-style: none;
+  padding: 0;
+}
+
+.join-challenge-notebook li {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.join-challenge-notebook li.completed span {
+  text-decoration: line-through;
+  color: #555;
+}
+
+.join-challenge-notebook label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.join-challenge-notebook input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .join-challenge-container {
+    padding-top: 60px;
+  }
+
+  .join-challenge-notebook {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .join-challenge-container {
+    padding-top: 70px;
+  }
+
+  .join-challenge-notebook {
+    max-width: 450px;
+  }
+}

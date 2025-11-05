@@ -1,0 +1,146 @@
+/* CreateChallenge.css for Create Challenge page */
+.create-challenge-container {
+  width: 1540px;
+  min-height: 100vh;
+  background: url("/challenges-bg.jpg") center/cover no-repeat;
+  background-color: #f4f7f6;
+  margin: 0 auto;
+  padding-top: 80px; /* Offset for fixed navbar */
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-challenge-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.create-challenge-form {
+  width: 500px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+}
+
+.create-challenge-form h1 {
+  color: #2e7d32;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><polygon fill="#333" points="0,0 12,0 6,12"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+  opacity: 0.8;
+}
+
+.create-challenge-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.create-challenge-form button:hover:not(:disabled) {
+  background-color: #388e3c;
+  transform: translateY(-2px);
+}
+
+.create-challenge-form button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #d32f2f;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.success {
+  color: #2e7d32;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .create-challenge-container {
+    padding-top: 60px;
+  }
+
+  .create-challenge-form {
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .create-challenge-container {
+    padding-top: 70px;
+  }
+
+  .create-challenge-form {
+    max-width: 450px;
+    padding: 30px;
+  }
+}

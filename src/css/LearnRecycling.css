@@ -1,0 +1,45 @@
+.learn-recycling {
+  background-size: cover;
+  background-position: center;
+  width: 1520px;
+}
+
+.row{
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.learn-recycling-section {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+}
+
+.column, .step, .question {
+  transition: all 0.3s ease;
+}
+
+.column:hover, .step:hover, .question:hover {
+  background-color: #f1f8e9;
+}
+
+@media (max-width: 900px) {
+  .columns {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .learn-recycling-section {
+    padding: 10px;
+    margin: 10px;
+  }
+  img {
+    max-width: 100%;
+  }
+}
