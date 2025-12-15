@@ -8,6 +8,9 @@ from dotenv import load_dotenv
 import requests
 from apscheduler.schedulers.background import BackgroundScheduler
 
+# Load environment variables
+load_dotenv()
+
 app = Flask(__name__)
 CORS(app, supports_credentials=True, origins=['http://localhost:5173'])
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
@@ -17,11 +20,11 @@ app.config['SESSION_TYPE'] = 'filesystem'
 def get_db_connection():
     try:
         conn = psycopg2.connect(
-            dbname="smartwaste_db",
-            user="postgres",
-            password=os.getenv('PG_PASSWORD'),
-            host="localhost",
-            port="5432"
+            dbname=os.getenv('PG_DATABASE'),
+            user=os.getenv('PG_USER'),
+            password=os.getenv('PG_PASSWORD'),  
+            host=os.getenv('PG_HOST'),
+            port=os.getenv('PG_PORT')
         )
         return conn
     except Exception as e:
