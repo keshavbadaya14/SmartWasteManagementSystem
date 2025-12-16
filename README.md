@@ -1,4 +1,4 @@
-Smart Waste Management System
+🌍 Smart Waste Management System
 
 A full-stack waste-sorting and community-driven recycling application built using:
 
@@ -16,30 +16,34 @@ Database: PostgreSQL
 
 
 🚀 Features
+
 1️⃣ Waste Sorting
 
 The waste sorting feature uses a rule-based keyword classifier that analyzes the item name and description.
 Based on predefined keywords, waste is categorized into Recyclable, Organic, Hazardous, or General Waste.
 
+
 2️⃣ Waste Pickup Scheduling
 
 Schedule a pickup by selecting date, time slot, waste type, address & notes.
+
 
 3️⃣ Learning Section
 
 Educational modules + quizzes for:
 
-Recycling
+1. Recycling
 
-Composting / Organic
+2. Composting / Organic
 
-Hazardous waste
+3. Hazardous waste
 
-Waste reduction
+4. Waste reduction
 
-Reuse
+5. Reuse
 
-E-Waste management
+6. E-Waste management
+   
 
 4️⃣ Community Challenges
 
@@ -57,6 +61,7 @@ Auto weekly reset (scheduler)
 
 
 ⚙️ Prerequisites
+
 ✔ Install Software
 
 Node.js ≥ 18
@@ -68,6 +73,7 @@ Python ≥ 3.10
 PostgreSQL ≥ 14
 
 npm / pip
+
 
 ✔ PostgreSQL Setup
 
@@ -166,6 +172,7 @@ CREATE TABLE user_ratings (
   rating INT
 );
 ```
+
 
 🔧 Environment Variables (.env)
 
