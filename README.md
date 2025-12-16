@@ -205,7 +205,7 @@ Handles login/signup & session management.
 
 ```bash
 cd backend
-pip install flask flask-cors flask-session python-dotenv psycopg2-binary bcrypt requests apscheduler joblib tensorflow numpy
+pip install flask flask-cors flask-session python-dotenv psycopg2-binary bcrypt requests apscheduler 
 python auth_server.py
 ```
 
