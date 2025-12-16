@@ -29,11 +29,11 @@ label_encoder = joblib.load('label_encoder.joblib')
 # Database connection
 def get_db_connection():
     conn = psycopg2.connect(
-        dbname="smartwaste_db",
-        user="postgres",
-        password="keshav@98765",  # Replace with your actual password
-        host="localhost",
-        port="5432"
+        dbname=os.getenv('PG_DATABASE'),
+        user=os.getenv('PG_USER'),
+        password=os.getenv('PG_PASSWORD'),  
+        host=os.getenv('PG_HOST'),
+        port=os.getenv('PG_PORT')
     )
     return conn
 
