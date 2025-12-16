@@ -49,15 +49,15 @@ Educational modules + quizzes for:
 
 Users can:
 
-Join challenges
+1. Join challenges
 
-Create challenges
+2. Create challenges
 
-Track challenge completion
+3. Track challenge completion
 
-View leaderboard
+4. View leaderboard
 
-Auto weekly reset (scheduler)
+5. Auto weekly reset (scheduler)
 
 
 ⚙️ Prerequisites
