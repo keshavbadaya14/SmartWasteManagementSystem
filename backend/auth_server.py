@@ -15,7 +15,7 @@ app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
 # Session configuration
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY') # Replace with secure key
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY') 
 app.config['SESSION_TYPE'] = 'filesystem'
 app.config['SESSION_FILE_DIR'] = os.path.join(os.getcwd(), 'flask_session')
 app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
@@ -26,7 +26,7 @@ def get_db_connection():
     conn = psycopg2.connect(
         dbname="smartwaste_db",
         user="postgres",
-        password="keshav@98765",  # Replace with your actual password
+        password="keshav@98765", 
         host="localhost",
         port="5432"
     )
