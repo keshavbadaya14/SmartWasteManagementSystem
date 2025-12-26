@@ -1,4 +1,4 @@
-#🌍 Smart Waste Management System
+## 🌍 Smart Waste Management System
 
 A full-stack waste-sorting and community-driven recycling application built using:
 
