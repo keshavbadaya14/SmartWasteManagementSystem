@@ -1,4 +1,4 @@
-🌍 Smart Waste Management System
+#🌍 Smart Waste Management System
 
 A full-stack waste-sorting and community-driven recycling application built using:
 
@@ -14,6 +14,7 @@ pickup_server.py – Waste pickup scheduling & community challenges (Flask)
 
 Database: PostgreSQL
 
+---
 
 🚀 Features
 
@@ -59,6 +60,7 @@ Users can:
 
 5. Auto weekly reset (scheduler)
 
+---
 
 ⚙️ Prerequisites
 
@@ -172,7 +174,7 @@ CREATE TABLE user_ratings (
   rating INT
 );
 ```
-
+---
 
 🔧 Environment Variables (.env)
 
